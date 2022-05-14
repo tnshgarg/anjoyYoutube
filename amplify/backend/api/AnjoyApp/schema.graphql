@@ -1,0 +1,48 @@
+type EmbeddedVideo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  videoLink: String
+  videoCategory: String
+  timestamp: String
+  comments: [String]
+  notes: String
+}
+
+type ChannelDetails @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  channelName: String
+  channelDesc: String!
+  followers: [AWSJSON!]
+  following: [AWSJSON!]
+  channelProfileUrl: String!
+  ChannelToVideos: [Video] @hasMany(indexName: "byChannelDetails", fields: ["id"])
+}
+
+type Channel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  channelName: String!
+  channelUrl: String!
+  channelDescription: String
+  videos: [String]
+  channelProfileUrl: String
+  Videos: [Video] @hasMany(indexName: "byChannel", fields: ["id"])
+}
+
+type Video @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  posterUrl: String!
+  videoUrl: String!
+  videoTitle: String!
+  videoCategory: String!
+  timestamp: AWSDateTime!
+  views: Int!
+  likes: Int!
+  channelName: String!
+  notesUrl: String!
+  assignmentUrl: String!
+  shareUrl: String!
+  comments: [String!]!
+  channelUrl: String
+  videoDescription: String
+  channeldetailsID: ID! @index(name: "byChannelDetails")
+  channelID: ID! @index(name: "byChannel")
+} 

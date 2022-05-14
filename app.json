@@ -1,33 +1,17 @@
 {
   "expo": {
-    "name": "anjoyMain3",
-    "slug": "anjoyMain3",
+    "name": "Anjoy",
+    "icon": "./assets/OtherIcons/icon.png",
+    "slug": "anjoy-main",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.tnshgarg.anjoymain",
+      "softwareKeyboardLayoutMode": "pan"
+      
     }
-  }
+  },
+  "name": "anjoy-main"
 }

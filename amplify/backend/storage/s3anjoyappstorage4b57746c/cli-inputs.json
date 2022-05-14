@@ -1,0 +1,16 @@
+{
+  "resourceName": "s3anjoyappstorage4b57746c",
+  "bucketName": "anjoyapp-storage-4b57746c",
+  "policyUUID": "dc673cfc",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "DELETE",
+    "READ",
+    "CREATE_AND_UPDATE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

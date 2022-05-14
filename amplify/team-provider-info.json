@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-anjoyapp-staging-125853-authRole",
+      "UnauthRoleArn": "arn:aws:iam::337503497088:role/amplify-anjoyapp-staging-125853-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::337503497088:role/amplify-anjoyapp-staging-125853-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-anjoyapp-staging-125853-deployment",
+      "UnauthRoleName": "amplify-anjoyapp-staging-125853-unauthRole",
+      "StackName": "amplify-anjoyapp-staging-125853",
+      "StackId": "arn:aws:cloudformation:ap-south-1:337503497088:stack/amplify-anjoyapp-staging-125853/a03bab00-c560-11ec-9edf-06b2437e37fe",
+      "AmplifyAppId": "d3faw7u5p3zf3w"
+    },
+    "categories": {
+      "auth": {
+        "AnjoyApp": {}
+      }
+    }
+  }
+}
